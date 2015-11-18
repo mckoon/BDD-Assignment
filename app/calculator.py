@@ -1,3 +1,6 @@
+import math
+
+
 class Calculator(object):
     def add(self, x, y):
         number_types = (int, long, float, complex)
@@ -24,7 +27,6 @@ class Calculator(object):
         else:
             raise ValueError
 
-
     def factorial(self, n):
         number_types = (int, long)
  
@@ -32,9 +34,8 @@ class Calculator(object):
             if n < 0:
                 return None
             else:
-                #TODO compute factorial here
-                return 0
+                return math.factorial(n)
         else:
             raise ValueError
 
-    
+

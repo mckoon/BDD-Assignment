@@ -22,10 +22,11 @@ def step_for_mutiply(step, x, y):
 '''
 #TODO finish step for volume
 def step_for_volume(step, x, y, z):
-    
-#TODO finish step for factorial
-def step_for_factorial(step, x):
 '''
+
+@step(u'Given I input "([^"]*)" factorial')
+def step_for_factorial(step, x):
+    world.result = world.calc.factorial(int(x))
 
 
 @step(u'I should see "([^"]+)"')
